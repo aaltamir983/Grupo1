@@ -1,6 +1,15 @@
 table Sales
 	lineageTag: 1c305841-a96c-4654-bcdf-f20af1fd4c6a
 
+	measure 'Cacntitad de pedidos' =
+			
+			COUNTROWS(
+			    Sales
+			)
+		formatString: 0
+		displayFolder: Medidas
+		lineageTag: 48737984-478e-486f-8b0a-4a27b6f7ddf1
+
 	column OrderDate
 		dataType: dateTime
 		formatString: Long Date
